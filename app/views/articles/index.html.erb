@@ -1,2 +1,10 @@
 <h1>All articles</h1>
 <p>Find all articles about your favorite subjects.</p>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= article.title %>
+    </li>
+  <% end %>
+</ul>
